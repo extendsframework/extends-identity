@@ -10,7 +10,7 @@ class Identity implements IdentityInterface
      *
      * @var string
      */
-    protected $identifier;
+    private $identifier;
 
     /**
      * Identity constructor.

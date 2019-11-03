@@ -13,7 +13,7 @@ class InMemoryStorage implements StorageInterface
      *
      * @var IdentityInterface
      */
-    protected $identity;
+    private $identity;
 
     /**
      * @inheritDoc
