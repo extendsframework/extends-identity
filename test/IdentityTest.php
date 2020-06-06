@@ -17,8 +17,7 @@ class IdentityTest extends TestCase
      */
     public function testGetIdentifier(): void
     {
-        $identity = new Identity('foo-bar');
-
-        $this->assertSame('foo-bar', $identity->getIdentifier());
+        $this->assertSame('foo-bar', (new Identity('foo-bar'))->getIdentifier());
+        $this->assertSame(1, (new Identity(1))->getIdentifier());
     }
 }

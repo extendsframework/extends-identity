@@ -8,16 +8,16 @@ class Identity implements IdentityInterface
     /**
      * Identity identifier.
      *
-     * @var string
+     * @var mixed
      */
     private $identifier;
 
     /**
      * Identity constructor.
      *
-     * @param string $identifier
+     * @param mixed $identifier
      */
-    public function __construct(string $identifier)
+    public function __construct($identifier)
     {
         $this->identifier = $identifier;
     }
@@ -25,7 +25,7 @@ class Identity implements IdentityInterface
     /**
      * @inheritDoc
      */
-    public function getIdentifier(): string
+    public function getIdentifier()
     {
         return $this->identifier;
     }

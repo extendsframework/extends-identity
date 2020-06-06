@@ -8,7 +8,7 @@ interface IdentityInterface
     /**
      * Get identity identifier.
      *
-     * @return string
+     * @return mixed
      */
-    public function getIdentifier(): string;
+    public function getIdentifier();
 }
